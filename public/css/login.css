@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*header*/
+header {
+    background-color: #EAC926;
+    padding: 3vh;
+}
+
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header nav ul{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+@media(max-width: 769px ){
+header nav ul{
+    display: none;}
+    .flex-box{
+        display:none;
+        flex-wrap: wrap;
+    }
+}
+
+
+header nav li a{
+    margin: 0 5px;
+    color: black;
+    text-decoration:none;
+
+}
+
+.flex-box1{
+    display:flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    width: 100%;
+}
+
+
+.formH {
+   justify-content: center;
+    display: flex;
+    height: 30px;
+    margin-top: 1vh;
+    width: 33.3%;
+    text-align: center;
+ 
+}
+
+.formH input {
+   width: 80%;
+}
+
+.burger-menu {         
+    background-color: blue;
+    display: flex;
+    margin: auto; 
+    padding: 10px;
+    border-radius: 6px;
+}
+
+
+.burger-menu i {
+    margin:auto;
+    color : white;
+}
+.flex-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(min-width: 769px ){
+    .burger-menu{
+        display: none;
+    
+    }
+    .formH {
+        height: 40px;
+        width: 50%; 
+    }
+ 
+}
+
+.slog{
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 1vh;
+    width: 50%;
+    font-size: 1.1em;
+}
+@media(max-width: 769px ){
+    .slog{
+        
+        margin: 1vh 0;
+      
+        width: 100%;
+        
+    }
+    }
+
+@media(min-width: 1200px){
+    header nav ul li {
+        margin: 0 15px;
+    }
+
+    header nav{
+        margin-top: 40px;
+    }
+
+    header{
+        padding: 3vh 5vw
+    }
+    
+    
+    .formH {
+        height: 40px;
+        width: 80%; 
+    }
+}
+
+
+
+
+
+/*end header*/
+
+
+/*log in
+*/
+
+main{
+    margin: auto;
+}
+.ingresodatos{
+    text-align: center;
+    background-color:#d8d8d5;
+    box-sizing: border-box;
+    margin: 2% 30%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+@media(max-width:950px){
+    .ingresodatos{  
+        margin: auto 20%;
+
+    }
+    
+}
+@media(max-width:469px){
+    .ingresodatos{
+        margin: auto 5%;
+    }
+    
+}
+
+.formulario{  
+    text-align: center; 
+    border-radius: 10px;  
+}
+
+.formulario div{
+    margin: 5px 0;
+}
+.registrodatos h1 {
+margin: 0%;
+}
+
+section form div input{
+    width: 100%;
+    border-radius: 10px;
+    line-height: 35px;
+    border: none;
+
+    
+}
+
+.butonL{
+   background-color: blue;
+   border: none;
+   color: rgb(255, 255, 255);
+}
+
+
+.butonReg{
+    text-decoration:none ;
+}
+
+.butonReg:hover{
+    background-color: #0022AA;
+    color: aliceblue;
+   
+}
+
+
+/*footer*/
+
+
+footer {
+    font-size: 12px;
+    padding: 0 8vw;
+    text-align: center;
+}
+footer p{
+    margin-top: 0;
+}
+
+#enviogratis{
+    color:blue;
+}
+
+
+#seguridad{
+    color:blue;
+}
+
+
+#tarjeta{
+    color: blue;
+        
+}
+footer{
+    margin: 20px auto;
+}
+
+@media(min-width: 1200px){
+   
+    footer section {
+        display: flex;
+    }
+
+    #enviogratis:hover{
+        color:rgb(251, 255, 0);
+    }
+
+    #seguridad:hover{
+        color:rgb(251, 255, 0);    }
+    
+    
+    #tarjeta:hover{
+        color:rgb(251, 255, 0);           
+    }
+    
+}
+

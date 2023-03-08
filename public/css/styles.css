@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+
+.descuento{
+    font-size: 16px;
+}
+
+
+
+
+.descripciones {
+    font-size: 16px;
+    display: none;
+}
+
+section article:hover .descripciones {
+    display: block;
+}
+footer {
+    font-size: 12px;
+    padding: 0 8vw;
+}
+
+
+footer h2{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+
+footer p{
+    margin-top: 0;
+}
+
+header {
+    background-color: #EAC926;
+    padding: 3vh;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ul{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+
+li a{
+    margin: 0 5px;
+    color: black;
+    text-decoration:none;
+
+}
+
+
+@media(max-width: 769px ){
+nav ul{
+    display: none;}
+
+
+    .flex-box{
+        display:none;
+        flex-wrap: wrap;
+    }
+    
+
+}
+
+
+.flex-box1{
+    display:flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    width: 100%;
+}
+
+
+form {
+   justify-content: center;
+    display: flex;
+    height: 30px;
+    margin-top: 1vh;
+    width: 33.3%;
+    text-align: center;
+ 
+}
+
+
+form input {
+   width: 80%;
+}
+
+
+.slog{
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 1vh;
+    width: 50%;
+    font-size: 1.1em;
+}
+
+
+.burger-menu {         
+    background-color: blue;
+    display: flex;
+    margin: auto; 
+    padding: 10px;
+    border-radius: 6px;
+}
+
+
+.burger-menu i {
+    margin:auto;
+    color : white;
+}
+
+
+@media(min-width: 769px ){
+    .burger-menu{
+        display: none;
+    
+    }
+}
+    
+
+    .flex-box{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .flex-box-p{
+        display: flex;
+    
+    }
+
+
+    .descuento{
+        margin-left: 10px;
+    }
+
+
+footer {
+    text-align: center;
+    
+}
+
+
+main {
+    background-color: #ebebeb;
+     margin: auto;
+    padding-top: 10px;
+    width:90%;
+    padding: 0 5%;
+}
+
+
+main section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+main section article{
+
+  max-width: 18vw;
+}
+
+
+@media(max-width:768px){
+  
+    main section article{
+    
+      max-width: 38vw;
+    }
+
+}
+
+
+@media(max-width:480px){
+
+    main section article{
+    
+      max-width: 80vw;
+    }
+}
+
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top:-15px;
+}
+
+
+#ultima-visita{
+    text-align: center;
+}
+
+
+#enviogratis{
+    color:blue;
+}
+
+
+#seguridad{
+    color:blue;
+}
+
+
+#tarjeta{
+    color: blue;
+   
+     
+}
+
+
+
+
+section article{
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+section article:hover{
+  
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+}
+
+
+
+.imagen{
+    width:100%;
+    max-width: 769px;
+    display: block;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+
+.desc-articulo{
+    border-top: 1px  solid #ebebeb;
+    padding:0 15px ;
+    
+}
+
+
+.descuento{
+    color: green;
+}
+
+
+/* media queries */
+
+@media (max-width:769px){
+
+
+    .descripciones{
+        display: none;
+    }
+
+    section article{
+        box-shadow: none;
+    }
+
+    form {
+        height: 40px;
+        width: 50%; 
+    }
+
+
+.slog{
+   margin: 10px auto;
+    }
+}
+
+.img-publi{
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: -5px;
+}
+footer{
+    margin: 20px auto;
+}
+
+@media(min-width: 1200px){
+    li {
+        margin: 0 15px;
+    }
+
+    nav{
+        margin-top: 40px;
+    }
+
+    header{
+        padding: 3vh 5vw
+    }
+    
+    
+    form {
+        height: 40px;
+     
+        width: 80%; 
+    }
+
+
+    #enviogratis:hover{
+        color:rgb(251, 255, 0);
+    }
+
+    #seguridad:hover{
+        color:rgb(251, 255, 0);    }
+    
+    
+    #tarjeta:hover{
+        color:rgb(251, 255, 0);           
+    }
+   
+    footer section {
+        display: flex;
+    }
+}
+
